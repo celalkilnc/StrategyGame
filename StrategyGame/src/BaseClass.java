@@ -11,12 +11,12 @@ public class BaseClass {
             if (FstPlyr.getPower()>SndPlyr.getPower())      { return FightInfo.FirstPlayerWin; }
             else if (FstPlyr.getPower()<SndPlyr.getPower()) { return FightInfo.SecondPlayerWin; }
         }
+        
         return FightInfo.Scoreless; //Eşitlik Sağlanırsa
     }
 
     public Character[] CharacterPack(int CharacterNum){ //Karakter destesi döndüren metod
         Character[] ListCharacter = new Character[CharacterNum];
-        
         for(int i = 0; i<ListCharacter.length; i++){
             ListCharacter[i] = CreateCharacter();
         }
