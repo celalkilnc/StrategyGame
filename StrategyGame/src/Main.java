@@ -3,7 +3,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args){
         BaseClass baseClass = new BaseClass();
-        int FirstPlyScore = 0,SecondPlyScore = 0,CharacterNum_ = 5;
+        int FirstPlyScore = 0, SecondPlyScore = 0, CharacterNum_ = 5;
 
         Character[] FstPlyrChrtrs = baseClass.CharacterPack(CharacterNum_);
         Character[] SndPlyrChrtrs = baseClass.CharacterPack(CharacterNum_);
