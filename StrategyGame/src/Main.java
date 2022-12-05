@@ -11,11 +11,11 @@ public class Main {
         for (int i = 0;i<CharacterNum_;i++){
             Character First = FstPlyrChrtrs[i],Second = SndPlyrChrtrs[i];
 
-            if (baseClass.CharctrFight(First, Second) == FightInfo.FirstPlayerWin)        { FirstPlyScore++; }
+            if (baseClass.CharctrFight(First, Second) == FightInfo.FirstPlayerWin)       { FirstPlyScore++; }
             else if (baseClass.CharctrFight(First, Second) == FightInfo.SecondPlayerWin) { SecondPlyScore++;}
         }
         
-        if (FirstPlyScore>SecondPlyScore) { System.out.println("1st Player Win!"); }
+        if (FirstPlyScore>SecondPlyScore)      { System.out.println("1st Player Win!"); }
         else if (FirstPlyScore<SecondPlyScore) { System.out.println("2nd Player Win!"); }
         else { System.out.println("Scoreless"); }
         
