@@ -2,14 +2,14 @@ import java.util.Random;
 
 public class BaseClass {
 
-    public FightInfo CharctrFight(Character FstPlyr,Character SndPlyr){
+    public FightInfo CharctrFight( Character FstPlyr, Character SndPlyr ){
         //Hiyerarşik karşılaştırma
-        if(FstPlyr.getId()>SndPlyr.getId())       { return FightInfo.FirstPlayerWin;}
-        else if (FstPlyr.getId()<SndPlyr.getId()) { return FightInfo.SecondPlayerWin;}
+        if(FstPlyr.getId() > SndPlyr.getId())       { return FightInfo.FirstPlayerWin; }
+        else if (FstPlyr.getId() < SndPlyr.getId()) { return FightInfo.SecondPlayerWin;}
         else {
             //Güç karşılaştırması
-            if (FstPlyr.getPower()>SndPlyr.getPower())      { return FightInfo.FirstPlayerWin; }
-            else if (FstPlyr.getPower()<SndPlyr.getPower()) { return FightInfo.SecondPlayerWin; }
+            if (FstPlyr.getPower() > SndPlyr.getPower())      { return FightInfo.FirstPlayerWin; }
+            else if (FstPlyr.getPower() < SndPlyr.getPower()) { return FightInfo.SecondPlayerWin; }
         }
         
         return FightInfo.Scoreless; //Eşitlik Sağlanırsa
@@ -24,7 +24,7 @@ public class BaseClass {
         return ListCharacter;
     }
 
-    public Character CreateCharacter(){ //Karakter oluşturma
+    public Character CreateCharacter() { //Karakter oluşturma
         Character character = new Character();
         Random random = new Random();
         
