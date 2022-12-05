@@ -2,7 +2,8 @@ import java.util.Random;
 
 public class BaseClass {
 
-    public FightInfo CharctrFight(Character FstPlyr,Character SndPlyr){//Hiyerarşik karşılaştırma
+    public FightInfo CharctrFight(Character FstPlyr,Character SndPlyr){
+        //Hiyerarşik karşılaştırma
         if(FstPlyr.getId()>SndPlyr.getId())       { return FightInfo.FirstPlayerWin;}
         else if (FstPlyr.getId()<SndPlyr.getId()) { return FightInfo.SecondPlayerWin;}
         else {
