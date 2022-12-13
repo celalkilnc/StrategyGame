@@ -26,7 +26,7 @@ public class BaseClass {
 
     public Character CreateCharacter() { //Karakter oluşturma
         Character character = new Character();
-        Random random = new Random();
+        Random random       = new Random();
         
         character.setId(random.nextInt(1,3));
         character.setPower(random.nextInt(1,11));
