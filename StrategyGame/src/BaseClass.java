@@ -9,7 +9,7 @@ public class BaseClass {
         else {
             //Güç karşılaştırması
             if (FstPlyr.getPower() > SndPlyr.getPower())      { return FightInfo.FirstPlayerWin; }
-            else if (FstPlyr.getPower() < SndPlyr.getPower()) { return FightInfo.SecondPlayerWin; }
+            else if (FstPlyr.getPower() < SndPlyr.getPower()) { return FightInfo.SecondPlayerWin;}
         }
         
         return FightInfo.Scoreless; //Eşitlik Sağlanırsa
