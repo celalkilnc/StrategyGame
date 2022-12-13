@@ -8,7 +8,7 @@ public class Main {
         Character[] FstPlyrChrtrs = baseClass.CharacterPack(CharacterNum_);
         Character[] SndPlyrChrtrs = baseClass.CharacterPack(CharacterNum_);
 
-        for (int i = 0;i<CharacterNum_;i++){
+        for (int i = 0; i < CharacterNum_; i++) {
             Character First = FstPlyrChrtrs[i], Second = SndPlyrChrtrs[i];
 
             if      (baseClass.CharctrFight(First, Second) == FightInfo.FirstPlayerWin ) { FirstPlyScore++ ;}
