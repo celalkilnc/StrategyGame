@@ -17,7 +17,7 @@ public class BaseClass {
 
     public Character[] CharacterPack(int CharacterNum){ //Karakter destesi döndüren metod
         Character[] ListCharacter = new Character[CharacterNum];
-        for(int i = 0; i<ListCharacter.length; i++){
+        for(int i = 0; i < ListCharacter.length; i++){
             ListCharacter[i] = CreateCharacter();
         }
         
