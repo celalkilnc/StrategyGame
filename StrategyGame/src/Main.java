@@ -15,8 +15,8 @@ public class Main {
             else if (baseClass.CharctrFight(First, Second) == FightInfo.SecondPlayerWin) { SecondPlyScore++;}
         }
         
-        if      (FirstPlyScore>SecondPlyScore) { System.out.println("1st Player Win!"); }
-        else if (FirstPlyScore<SecondPlyScore) { System.out.println("2nd Player Win!"); }
+        if      ( FirstPlyScore > SecondPlyScore ) { System.out.println("1st Player Win!"); }
+        else if ( FirstPlyScore < SecondPlyScore ) { System.out.println("2nd Player Win!"); }
         else { System.out.println("Scoreless"); }
         
         System.out.println("1st Score: "+ FirstPlyScore + "\n2nd Score: "+SecondPlyScore);
