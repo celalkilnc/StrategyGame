@@ -15,7 +15,7 @@ public class BaseClass {
         return FightInfo.Scoreless; //Eşitlik Sağlanırsa
     }
 
-    public Character[] CharacterPack(int CharacterNum){ //Karakter destesi döndüren metod
+    public Character[] CharacterPack(int CharacterNum){ 
         Character[] ListCharacter = new Character[CharacterNum];
         for(int i = 0; i < ListCharacter.length; i++){
             ListCharacter[i] = CreateCharacter();
@@ -24,7 +24,7 @@ public class BaseClass {
         return ListCharacter;
     }
 
-    public Character CreateCharacter() { //Karakter oluşturma
+    public Character CreateCharacter() {
         Character character = new Character();
         Random random       = new Random();
         
