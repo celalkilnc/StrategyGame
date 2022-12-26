@@ -17,7 +17,7 @@ public class Main {
         
         if      ( FirstPlyScore > SecondPlyScore ) { System.out.println("1st Player Win!"); }
         else if ( FirstPlyScore < SecondPlyScore ) { System.out.println("2nd Player Win!"); }
-        else { System.out.println("Scoreless"); }
+        else    { System.out.println("Scoreless"); }
         
         System.out.println("1st Score: "+ FirstPlyScore + "\n2nd Score: "+SecondPlyScore);
     }
