@@ -24,7 +24,7 @@ public class BaseClass {
         return ListCharacter;
     }
 
-    public Character CreateCharacter() {
+    private Character CreateCharacter() {
         Character character = new Character();
         Random random       = new Random();
         
